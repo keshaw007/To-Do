@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: #1A1A40;
+  background: #1a1a40;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -56,19 +56,26 @@ h1 {
   border: none;
   padding: 0.55rem;
   cursor: pointer;
-  
 }
 
 .Todo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex;
+  justify-content: center;
+  
   background: #8758ff;
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;
-  margin-bottom: 1rem;
+ 
   cursor: pointer;
+  gap: 200px; */
+  display: grid;
+  grid-template-columns: repeat(3, 5fr); /* Three equal columns */
+  gap: 200px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
 }
 
 .fa-trash {
@@ -79,4 +86,3 @@ h1 {
   color: #c5aeff;
   text-decoration: line-through;
 }
- 
